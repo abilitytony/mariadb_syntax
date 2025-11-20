@@ -22,7 +22,7 @@ select * from author where name = '홍길동';
 select * from author where id >2 and name='hongildong' ;
 select * from author where id in (1,3,5);
 -- 이름 홍길동인 글쓴이가 쓴 글 목록을 조회하시오
-select * from post where id in(select id from author where name='홍길동');
+select * from post where author_id in(select id from author where name='홍길동');
 
 -- 중복제거 조회 : distinct
 select name from author;
