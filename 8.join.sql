@@ -85,3 +85,8 @@ select author_id, count(*) from post group by author_id having count(*) >=2;
 -- 카테고리 별 도서 판매량 집계하기 -> join까지
 -- 조건에 맞는 사용자와 총 거래금액 조회하기 -> join까지
 
+-- 다중열 gruop by
+-- gruop by 첫번째컬럼, 두번째컬럼 : 첫번째컬럼으로 grouping 이후에 두번째컬럼으로 grouping
+-- post테이블에서 작성자별로 구분하여 같은 제목의 글의 개수를 출력하시오.
+-- 재구매가 일어난 상품과 회원 리스트 구하기
+
